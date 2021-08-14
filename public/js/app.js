@@ -4003,7 +4003,6 @@ function Index(_ref) {
             },
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
               href: "resume/pdfDownload?" + query,
-              target: "_blank",
               children: "PDF\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9"
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
