@@ -17,14 +17,15 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
+// Route::get('/', function () {
+//     return Inertia::render('Welcome', [
+//         'canLogin' => Route::has('login'),
+//         'canRegister' => Route::has('register'),
+//         'laravelVersion' => Application::VERSION,
+//         'phpVersion' => PHP_VERSION,
+//     ]);
+// });
+Route::inertia('/', 'Home');
 
 Route::inertia('/test', 'Test');
 Route::get('/resume', [resumeController::class, 'index'])->name('resume');
@@ -33,8 +34,6 @@ Route::get('/resume/pdfDownload', [resumeController::class, 'pdfDownload'])->nam
 Route::get('/resume/webPreview', [resumeController::class, 'webPreview'])->name('resumeWebPreview');
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::inertia('/home', 'Home');
-
     Route::get('/profile', [profileController::class, 'index'])->name('profile');
     Route::delete('/profilePhotoDelete', [profileController::class, 'deleteProfilePhoto'])->name('profilePhotoDelete');
     Route::put('/profilePhotoUpdate', [profileController::class, 'updateProfilePhoto'])->name('profilePhotoUpdate');
