@@ -17,5 +17,7 @@ package-lock.json
 .htaccess
 index.php
 public/js/app.js.LICENSE.txt
+public/css/*
+public/js/*
 
 .vscode
