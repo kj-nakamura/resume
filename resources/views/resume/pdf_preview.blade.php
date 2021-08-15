@@ -19,17 +19,20 @@
             font-weight: normal;
             src: url('{{ storage_path('fonts/ipag.ttf') }}') format('truetype');
         }
+
         @font-face {
             font-family: ipag;
             font-style: bold;
             font-weight: bold;
             src: url('{{ storage_path('fonts/ipag.ttf') }}') format('truetype');
         }
+
         body {
             font-family: ipag !important;
         }
+
     </style>
-    <link rel="stylesheet" href="{{ public_path('/css/app.css') }}">
+    <link rel="stylesheet" href="{{ public_path('css/app.css') }}">
 
     <!-- Scripts -->
     {{-- <script src="{{ mix('js/app.js') }}" defer></script> --}}
