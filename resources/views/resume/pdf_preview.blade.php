@@ -32,7 +32,7 @@
         }
 
     </style>
-    <link rel="stylesheet" href="{{ public_path('css/app.css') }}">
+    <link rel="stylesheet" href="{{ public_path('/css/app.css') }}">
 
     <!-- Scripts -->
     {{-- <script src="{{ mix('js/app.js') }}" defer></script> --}}
