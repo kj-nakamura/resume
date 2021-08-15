@@ -577,7 +577,10 @@ function Index({ loggedin }) {
                             </a>
                         </button>
                         <button onClick={() => makeQuery()}>
-                            <a href={"resume/pdfDownload?" + query}>
+                            <a
+                                href={"resume/pdfDownload?" + query}
+                                target="_blank"
+                            >
                                 PDFダウンロード
                             </a>
                         </button>
